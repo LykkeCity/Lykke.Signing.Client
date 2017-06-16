@@ -1,0 +1,3 @@
+cd ./src/Lykke.Signing.Client/
+iwr http://13.93.116.252:3366/swagger/ui/index/index.html -o Lykke.Signing.json
+autorest --input-file=Lykke.Signing.json --csharp --namespace=Lykke.Signing.Client --output-folder=./
