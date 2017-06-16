@@ -1,3 +1,4 @@
 obj
 bin
 _ReSharper.Caches
+/src/Lykke.Signing.Client/Lykke.Signing.json

@@ -22,9 +22,10 @@ namespace Lykke.Signing.Client.Models
         /// <summary>
         /// Initializes a new instance of the PubKeyResponse class.
         /// </summary>
-        public PubKeyResponse(string pubKey = default(string))
+        public PubKeyResponse(string pubKey = default(string), string address = default(string))
         {
             PubKey = pubKey;
+            Address = address;
             CustomInit();
         }
 
@@ -37,6 +38,11 @@ namespace Lykke.Signing.Client.Models
         /// </summary>
         [JsonProperty(PropertyName = "pubKey")]
         public string PubKey { get; set; }
+
+        /// <summary>
+        /// </summary>
+        [JsonProperty(PropertyName = "address")]
+        public string Address { get; set; }
 
     }
 }
